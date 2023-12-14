@@ -2,7 +2,7 @@
 /**
  * add_head - adds node
  * @h: head of the stack
- * @n: the added new val
+ * @l: the added new val
  * Return: 0
 */
 void add_head(stack_t **h, int l)
