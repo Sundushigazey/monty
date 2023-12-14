@@ -49,4 +49,6 @@ void p_stack(stack_t *top);
 void _push(stack_t **top, unsigned int count_line);
 void _qu(stack_t **top, unsigned int num);
 void _addqu(stack_t **top, int t);
+int main(int ac, char *av[]);
+
 #endif /* MONTY_H */
