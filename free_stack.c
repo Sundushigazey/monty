@@ -5,13 +5,12 @@
 */
 void _emptys(stack_t *top)
 {
-	stack_t *t;
-
-	t = top;
-	while (top)
-	{
-		t = top->next;
-		free(top);
-		top = t;
-	}
+stack_t *t;
+t = top;
+while (top)
+{
+t = top->next;
+free(top);
+top = t;
+}
 }
