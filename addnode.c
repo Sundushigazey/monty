@@ -7,18 +7,18 @@
 */
 void add_head(stack_t **h, int l)
 {
-
-	stack_t *add_new, *temp;
-
-	temp = *h;
-	add_new = malloc(sizeof(stack_t));
-	if (add_new == NULL)
-	{ printf("Error\n");
-		exit(0); }
-	if (temp)
-		temp->prev = add_new;
-	add_new->l = l;
-	add_new->next = *h;
-	add_new->prev = NULL;
-	*h = add_new;
+stack_t *add_new, *temp;
+temp = *h;
+add_new = malloc(sizeof(stack_t));
+if (add_new == NULL)
+{
+printf("Error\n");
+exit(0);
+}
+if (temp)
+temp->prev = add_new;
+add_new->l = l;
+add_new->next = *h;
+add_new->prev = NULL;
+*h = add_new;
 }
