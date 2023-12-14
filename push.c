@@ -6,15 +6,14 @@
 */
 void _push(stack_t **top, unsigned int count_line)
 {
-    if (!bus.arg)
-    {
-        fprintf(stderr, "L%d: usage: push integer\n", count_line);
-        fclose(bus.file);
-        free(bus.content);
-        _emptys(*top);
-        exit(EXIT_FAILURE);
-    }
-
-    int l = atoi(bus.arg);
-    add_head(top, l);
+if (!bus.arg)
+{
+fprintf(stderr, "L%d: usage: push integer\n", count_line);
+fclose(bus.file);
+free(bus.content);
+_emptys(*top);
+exit(EXIT_FAILURE);
+}
+int l = atoi(bus.arg);
+add_head(top, l);
 }
