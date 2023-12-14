@@ -7,15 +7,15 @@
 */
 void _pall(stack_t **top, unsigned int aux)
 {
-	stack_t *tm;
-	(void)aux;
+stack_t *tm;
+(void)aux;
 
-	tm = *top;
-	if (tm == NULL)
-		return;
-	while (tm)
-	{
-		printf("%d\n", tm->n);
-		tm = tm->next;
-	}
+tm = *top;
+if (tm == NULL)
+return;
+while (tm)
+{
+printf("%d\n", tm->n);
+tm = tm->next;
+}
 }
