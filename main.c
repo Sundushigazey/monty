@@ -19,7 +19,7 @@ fprintf(stderr, "USAGE: monty file\n");
 exit(EXIT_FAILURE);
 }
 loc = fopen(av[1], "r");
-bus.loc = loc;
+bus.file = loc;
 if (!loc)
 {
 fprintf(stderr, "Error: Can't open file %s\n", av[1]);
